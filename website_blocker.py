@@ -15,7 +15,7 @@ block_websites = ['www.facebook.com', 'facebook.com']
 
 
 while True:
-    if dt(dt.now().year, dt.now().month, dt.now().day, 23) < dt.now() < dt(dt.now().year, dt.now().month, dt.now().day, 23):
+    if dt(dt.now().year, dt.now().month, dt.now().day, 8) < dt.now() < dt(dt.now().year, dt.now().month, dt.now().day, 16):
         print("Working Hours, so blocking website....")
         with open(hosts_path, 'r+') as file:
             content = file.read()
